@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Barra Free - Barra de Tragos - Formulario de consulta">
+<meta name="author" content="Wye Digital - Hugo Ceriani - hugoceriani@gmail.com">
+<meta name="keywords" content="barra,tragos,aperitivos,coctails">
+<meta name="generator" content="Bootstrap 3" />
+<title>Barra Free - Contacto</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/contacto.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' debe contener una dirección de correo.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' debe contener un número.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' debe contener un número entre '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' es requiredo.\n'; }
+  } if (errors) alert('Ha ocurrido un error:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79263994-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top"> 
+  
+  <!-- Image backgrounds are set within the full-width-pics.css file. -->
+  <div class="image-bg-fluid-height"> <img class="img-responsive img-center" src="img/logo-10.png" alt="Barra Free"> </div>
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="page-scroll" href="index.html">Home</a> </li>
+        <li> <a class="page-scroll" href="about.html">About</a> </li>
+        <li> <a class="page-scroll" href="gallery.html">Gallery</a> </li>
+        <li> <a class="page-scroll" href="contacto.html">Contacts</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- Put your page content here! --> 
+
+<!-- Header -->
+
+<header>
+  <div class="header-content">
+    <div class="header-content-inner"> 
+      
+      <!-- Team Members Row --> 
+      
+      <!-- Contact Section -->
+      <div class="row">
+        <div class="col-lg-12">
+          <form class="form-horizontal" action="mailer-contacto.php" method="post" name="contacto" id="contacto">
+            <input name="destinatarioc" type="hidden" id="destinatarioc" value="hugoceriani@gmail.com,holabarrafree@gmail.com,info@barrafree.com.ar">
+            <input name="redireccionar" type="hidden" id="redireccionar" value="ok.html?utm_source=Banner&utm_medium=email&utm_campaign=Contacto">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Evento:</label>
+                  <div class="col-xs-9">
+                    <select class="form-control"  name="tipo" id="tipo" title="Tipo de Evento" maxlength="60" placeholder="Tipo de Evento" autocomplete="off" required/>
+                    
+                    <option value="Boda" selected="selected">Boda</option>
+                    <option value="15 a&ntilde;os">15 a&ntilde;os</option>
+                    <option value="Comuni&oacute;n">Comuni&oacute;n</option>
+                    <option value="Bar/Bat Mitzva">Bar/Bat Mitzva</option>
+                    <option value="Aniversario">Aniversario</option>
+                    <option value="Egreso/Graduaci&oacute;n">Egreso/Graduaci&oacute;n</option>
+                    <option value="Empresarial">Empresarial</option>
+                    <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Fecha:</label>
+                  <div class="col-xs-9">
+                    <input name="fecha" class="form-control" type="text" id="fecha" title="Fecha" maxlength="60" placeholder="Fecha del Evento" autocomplete="off" required/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Adultos:</label>
+                  <div class="col-xs-9">
+                    <input name="adultos" class="form-control" type="text" id="adultos" title="Cantidad de Adultos" maxlength="60" placeholder="Cantidad de Adultos" autocomplete="off" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Menores:</label>
+                  <div class="col-xs-9">
+                    <input name="menores" class="form-control" type="text" id="menores" title="Cantidad de Menores" maxlength="60" placeholder="Cantidad de Menores" autocomplete="off" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Lugar:</label>
+                  <div class="col-xs-9">
+                    <select class="form-control"  name="lugar" id="lugar" title="Tipo de Lugar" maxlength="60" placeholder="Tipo de lugar" autocomplete="off" required/>
+                    
+                    <option value="Salon" selected="selected">Salón de Fiesta</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Bar">Bar</option>
+                    <option value="Restaurante">Restaurante</option>
+                    <option value="Quinta">Quinta</option>
+                    <option value="Estancia">Estancia</option>
+                    <option value="Casa Particular">Casa Particular</option>
+                    <option value="Club">Club</option>
+                    <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Localidad:</label>
+                  <div class="col-xs-9">
+                    <input name="localidad" class="form-control" type="text" id="localidad" title="Localidad" maxlength="60" placeholder="Localidad" autocomplete="off" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Servicio:</label>
+                  <div class="col-xs-9">
+                    <select class="form-control"  name="servicio" id="servicio" title="Tipo de Servicio" maxlength="60" placeholder="Tipo de Servicio" autocomplete="off" required/>
+                    
+                    <option value="Nacional" selected="selected">Barra Nacional</option>
+                    <option value="Importada">Barra Importada</option>
+                    <option value="Vip">Barra Vip</option>
+                    <option value="Teens">Barra Teens</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Nombre:</label>
+                  <div class="col-xs-9">
+                    <input name="nombre" class="form-control" type="text" id="nombre" title="Nombre" maxlength="60" placeholder="Nombre" autocomplete="off" required/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Email:</label>
+                  <div class="col-xs-9">
+                    <input name="email" class="form-control" type="email" id="email" title="Email" maxlength="60" placeholder="Email" autocomplete="off" required/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3" >Teléfono:</label>
+                  <div class="col-xs-9">
+                    <input name="telefono" class="form-control" type="tel" id="telefono" title="Telefono" maxlength="60" placeholder="Tel&eacute;fono/s" autocomplete="off" required/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Comentarios:</label>
+                  <div class="col-xs-9">
+                    <textarea name="comentarios" cols="35" rows="6" id="comentarios"  class="form-control" title="Comentarios" maxlength="500" placeholder="Comentarios" autocomplete="off" required/>
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <!---  <div class="col-xs-offset-3 col-xs-9">-->
+                  <input type="submit" class="btn btn-primary" value="Enviar">
+                  <input type="reset" class="btn btn-default" value="Limpiar">
+                  <!-- </div>--> 
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div>
+        <p><span class="datos">Oficinas en Adrogue (Zona Sur) y Villa Urquiza (Capital)<br>
+          info@barrafree.com.ar<br>
+          Tel /WhatsApp: 1534361985<br>
+          Horario de atención  de Lunes a Viernes de 12 a 21 hs</span></p>
+        </p>
+      </div>
+      <p>¡Ponele diversión y sabor a tu Evento!<br>
+        ¡Ponele <span class="barra"> Barra </span> <span class="barra2">Free</span>!</p>
+    </div>
+    <div class="redes"><span class="img"><img src=img/redes-10.png usemap="#Map"></span>
+      <map name="Map">
+        <area shape="rect" coords="200,60,248,139" href="https://www.facebook.com/barrafree/?ref=bookmarks" target="_blank" alt="Facebook">
+        <area shape="rect" coords="284,62,330,137" href="https://www.youtube.com/watch?v=Qemhdu15-Xo" target="_blank" alt="Youtube">
+        <area shape="rect" coords="329,64,373,136" href="https://twitter.com/barrafree" target="_blank" alt="Twitter">
+        <area shape="rect" coords="248,61,284,138" href="https://www.instagram.com/barrafree_barrasmoviles/" target="_blank" alt="Instagram">
+      </map>
+    </div>
+  </div>
+</header>
+
+<!-- Header /--> 
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
